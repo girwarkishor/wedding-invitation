@@ -61,9 +61,11 @@ h3:after {
         border-radius: 100%;
         text-align: center;
         font-size: 1.1em;
+        font-weight: normal;
         color: $white;
         transition: all 0.2s;
         span{
+            font-weight: bold;
             display: block;
         }
         &:hover{
