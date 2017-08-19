@@ -17,7 +17,7 @@ body {
   padding: 0; }
 
 h3 {
-  font-weight: lighter;
+  font-weight: 200;
   color: #fefefe;
   letter-spacing: 0.15em;
   line-height: 2em; }
@@ -43,16 +43,22 @@ h3:after {
 .wd-timer {
   margin-top: 2rem;
   color: #fefefe; }
-  .wd-timer .days, .wd-timer .hours {
+  .wd-timer #days, .wd-timer #hours, .wd-timer #minutes, .wd-timer #seconds {
     display: inline-block;
-    width: 7em;
+    width: 8em;
     background: rgba(114, 103, 103, 0.588);
     border: 3px solid rgba(255, 255, 255, 0.588);
-    padding: 1.6em;
+    padding: 2em;
     border-radius: 100%;
     text-align: center;
     font-size: 1.1em;
-    color: #fefefe; }
+    color: #fefefe;
+    transition: all 0.2s; }
+    .wd-timer #days span, .wd-timer #hours span, .wd-timer #minutes span, .wd-timer #seconds span {
+      display: block; }
+    .wd-timer #days:hover, .wd-timer #hours:hover, .wd-timer #minutes:hover, .wd-timer #seconds:hover {
+      background-color: rgba(114, 103, 103, 0.9);
+      border: 3px solid rgba(255, 255, 255, 0.9); }
   .wd-timer .seperator {
     font-family: 'Great Vibes',sans-serif;
     font-size: 3em;
@@ -74,18 +80,59 @@ h3:after {
     color: #a7a3a3; }
 
 .btn-wd {
-  background-color: rgba(114, 103, 103, 0.588); }
+  background-color: rgba(114, 103, 103, 0.588);
+  transition: all 0.2s; }
   .btn-wd:hover {
-    background-color: rgba(114, 103, 103, 0.9); }
+    background-color: rgba(114, 103, 103, 0.9);
+    border: 3px solid rgba(255, 255, 255, 0.9); }
 
 .wd-footer img {
   width: 70%; }
 
 @media only screen and (max-width: 900px) {
+  h3 {
+    font-size: 0.9em; }
+
   .logo {
     padding-top: 0.6em; }
     .logo .wd-logo {
       width: 90vw;
-      height: auto; } }
+      height: auto; }
+
+  .wd-timer {
+    margin-top: 2rem;
+    color: #fefefe; }
+    .wd-timer #days, .wd-timer #hours {
+      display: inline-block;
+      width: 6em;
+      padding: 1em;
+      font-size: 1em; }
+    .wd-timer .seperator {
+      font-family: 'Great Vibes',sans-serif;
+      font-size: 2em; }
+    .wd-timer .mv-hdn {
+      display: none;
+      visibility: hidden; }
+
+  .wd-links {
+    margin: 2em auto; }
+    .wd-links .btn {
+      padding: 0.15em 1.5em;
+      margin: 0.8em 1em;
+      font-size: 0.9em; }
+      .wd-links .btn span {
+        font-size: 0.6rem; } }
+@media only screen and (min-width: 901px) {
+  .logo {
+    margin-top: 1em; }
+    .logo .wd-logo {
+      width: 55vw;
+      height: auto; }
+
+  .wd-footer img {
+    width: 35%; }
+
+  .btn {
+    margin: 1.5em 2em; } }
 
 /*# sourceMappingURL=style.css.map */

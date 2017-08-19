@@ -22,7 +22,7 @@ body{
 }
 
 h3{
-    font-weight: lighter;
+    font-weight:200;
     color: $white;
     letter-spacing: 0.15em; 
     line-height: 2em;
@@ -52,16 +52,24 @@ h3:after {
 .wd-timer{
     margin-top: 2rem;
     color: $white;
-    .days,.hours{
+    #days,#hours,#minutes,#seconds{
         display: inline-block;
-        width: 7em;
+        width: 8em;
         background: rgba(114, 103, 103,0.588);
         border: 3px solid rgba(255, 255, 255,0.588);
-        padding: 1.6em;
+        padding: 2em;
         border-radius: 100%;
         text-align: center;
         font-size: 1.1em;
         color: $white;
+        transition: all 0.2s;
+        span{
+            display: block;
+        }
+        &:hover{
+            background-color: rgba(114, 103, 103,0.9);
+            border: 3px solid rgba(255, 255, 255,0.9);
+        }
     }
     .seperator{
         font-family: 'Great Vibes',sans-serif;
@@ -87,8 +95,10 @@ h3:after {
 }
 .btn-wd{
     background-color: rgba(114, 103, 103,0.588);
+    transition: all 0.2s;
     &:hover{
         background-color: rgba(114, 103, 103,0.9);
+        border: 3px solid rgba(255, 255, 255,0.9);
     }
 }
 .wd-footer{
@@ -98,6 +108,9 @@ h3:after {
 }
 
 @media only screen and (max-width: 900px){
+    h3{
+        font-size: 0.9em;
+    }
     .logo{
         padding-top: 0.6em;
         .wd-logo{
@@ -105,5 +118,53 @@ h3:after {
         height: auto;
         }
     }
+    .wd-timer{
+        margin-top: 2rem;
+        color: $white;
+        #days,#hours{
+            display: inline-block;
+            width: 6em;
+            padding: 1em;
+            font-size: 1em;
+        }
+        .seperator{
+            font-family: 'Great Vibes',sans-serif;
+            font-size: 2em;
+        }
+        .mv-hdn{
+            display: none;
+            visibility: hidden;
+        }
+    }
+    .wd-links{
+        margin: 2em auto;
+        .btn{
+        padding: 0.15em 1.5em;
+        margin: 0.8em 1em;
+        font-size: 0.9em;
+        span{
+            font-size: 0.6rem;
+            }
+        }   
+    }
+}
+
+@media only screen and (min-width:901px){
+    .logo{
+        margin-top: 1em;
+        .wd-logo{
+        width: 55vw;
+        height: auto;
+        }
+    }
+    .wd-footer{
+    img{
+        width: 35%;
+    }
+}
+    .btn{
+    margin: 1.5em 2em;
+    }
+    
 }
 
