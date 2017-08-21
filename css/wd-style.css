@@ -1,0 +1,167 @@
+@import url("https://fonts.googleapis.com/css?family=Great+Vibes|Lato:300,400,700");
+/*---------------Color----------------------*/
+/*---------------Global Variable----------------------*/
+html {
+  box-sizing: border-box; }
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit; }
+
+body {
+  font-size: 16px;
+  line-height: 1.5;
+  font-family: 'Lato',sans-serif;
+  margin: 0;
+  padding: 0;
+  -webkit-font-smoothing: antialiased;
+  background-color: antiquewhite; }
+
+h1 {
+  font-family: 'Great Vibes', sans-serif;
+  font-weight: normal;
+  font-size: 4em;
+  margin: 0;
+  letter-spacing: 2px; }
+
+h1:after {
+  content: '';
+  background-color: #ff2c24;
+  height: 1px;
+  display: block;
+  width: 51%;
+  margin-left: 27%;
+  margin-top: -20px; }
+
+h2 {
+  font-family: 'Great Vibes', sans-serif;
+  font-weight: normal;
+  font-size: 2.5em;
+  margin: 0;
+  letter-spacing: 2px; }
+
+h3 {
+  text-align: center;
+  color: #fefefe;
+  font-weight: 300;
+  letter-spacing: 1px;
+  margin-top: 3em; }
+
+h3:after {
+  content: '';
+  background-color: #fefefe;
+  height: 1px;
+  display: block;
+  width: 22%;
+  margin-left: 39%;
+  margin-top: 0.3rem; }
+
+.wrapper {
+  width: 100%; }
+  .wrapper #header {
+    width: 100%;
+    background-image: linear-gradient(rgba(255, 44, 36, 0.8), rgba(255, 44, 36, 0.8)), url(../images/thorn-yang-104864.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 2em;
+    height: 100vh; }
+  .wrapper #invitation {
+    padding: 3em;
+    text-align: center;
+    color: #ff2c24;
+    background-color: #fefefe; }
+    .wrapper #invitation .invitation-content p {
+      letter-spacing: 1px;
+      word-spacing: 1px;
+      font-weight: normal;
+      color: #ff3c35; }
+    .wrapper #invitation .invitation-content .inv-full p:last-child {
+      font-weight: bolder; }
+  .wrapper #invitation-date {
+    padding: 3em;
+    color: #fefefe;
+    background-color: #ff5b55; }
+  .wrapper #family-member {
+    padding: 3em;
+    text-align: center;
+    color: #ff2c24;
+    background-color: #fefefe; }
+  .wrapper footer {
+    width: 100%;
+    color: #fefefe;
+    background-color: #ff5b55;
+    font-weight: 300;
+    text-align: center;
+    letter-spacing: 1px; }
+
+@media only screen and (max-width: 900px) {
+  h1 {
+    font-size: 3.3em;
+    line-height: 1; }
+
+  h1:after {
+    width: 28%;
+    margin-left: 35%;
+    margin-top: 10px; }
+
+  .wrapper {
+    width: 100%; }
+
+  .logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    margin: 0 auto;
+    padding: 1em; }
+    .logo img {
+      width: 100%; }
+
+  #header .header-content {
+    width: 100%; }
+    #header .header-content img {
+      width: 100%;
+      margin-top: 3em; }
+  #header .arrow {
+    width: 30%;
+    display: block;
+    margin: auto;
+    padding-top: 1em; }
+
+  #invitation-date .date-content div {
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.3);
+    text-align: center;
+    font-size: 1.1rem;
+    padding: 1em;
+    margin-bottom: 1em;
+    letter-spacing: 1px;
+    font-weight: 300; }
+    #invitation-date .date-content div:last-child {
+      margin-bottom: 0; }
+
+  #family-member .family-content .family {
+    margin-top: 1em; }
+    #family-member .family-content .family .member-details {
+      border: 1px solid #fbfbfb;
+      padding: 1em;
+      margin-bottom: 1em; }
+      #family-member .family-content .family .member-details img {
+        width: 100%; }
+      #family-member .family-content .family .member-details p {
+        font-size: 1.1em;
+        letter-spacing: 1px;
+        word-spacing: 1px; }
+        #family-member .family-content .family .member-details p:last-child {
+          font-size: 1em;
+          font-weight: 300; }
+  #family-member .family-content .col-1 .member-details p, #family-member .family-content .col-2 .member-details p {
+    font-size: 1.1em;
+    letter-spacing: 1px;
+    word-spacing: 1px; }
+    #family-member .family-content .col-1 .member-details p:last-child, #family-member .family-content .col-2 .member-details p:last-child {
+      font-size: 1em;
+      font-weight: 300; } }
+
+/*# sourceMappingURL=wd-style.css.map */

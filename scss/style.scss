@@ -19,6 +19,7 @@ body{
     line-height: 1.5;
     margin: 0;
     padding: 0;
+    -webkit-font-smoothing: antialiased;
 }
 
 h3{
@@ -101,6 +102,9 @@ h3:after {
     &:hover{
         background-color: rgba(114, 103, 103,0.9);
         border: 3px solid rgba(255, 255, 255,0.9);
+        span{
+            color: $white;
+        }
     }
 }
 .wd-footer{
