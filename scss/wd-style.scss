@@ -38,9 +38,8 @@ h1:after{
     background-color: $dark-red;
     height: 1px;
     display: block;
-    width: 51%;
-    margin-left: 27%;
-    margin-top: -20px;
+    width: 22%;
+    margin: auto;
 }
 h2{
     font-family: 'Great Vibes', sans-serif;
@@ -62,12 +61,11 @@ h3:after{
     height: 1px;  
     display: block;
     width: 22%;
-    margin-left: 39%;
-    margin-top: 0.3rem;
+    margin: auto;
 }
 
 .wrapper{
-    width: 100%;;
+    width: 100%;
     #header{
         width: 100%;
         background-image: linear-gradient(rgba(255,44,36,0.8),rgba(255,44,36,0.8)),url(../images/thorn-yang-104864.jpg);
@@ -118,6 +116,116 @@ h3:after{
     }
 }
 
+@media only screen and (min-width:901px){
+    .logo{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        img{
+            width: 60%;
+        }
+    }
+    h3{
+        margin-top: 1em;
+    }
+    h3:after{
+        display: block;
+        width: 7%;
+        margin: auto;
+    }
+    .header-content{
+        img{
+            width: 30%;
+            display: block;
+            margin: auto;
+        }
+    }
+    .arrow{
+        display: block;
+        width: 7%;
+        margin: auto;
+    }
+    #invitation{
+        height: 100vh; 
+        .invitation-content{
+            width: 80%;
+            display: block;
+            margin: auto;
+        }
+    }
+    #invitation-date{
+        height: 100vh;
+        display: grid;
+        justify-content: center;
+        .date-content{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: auto;
+            grid-gap: 1rem;
+            div{
+                width: 40vw;
+                background-color: rgba(255,255,255,0.3);
+                padding: 10vh;
+                text-align: center;
+                font-weight: normal;
+                letter-spacing: 1px;
+                word-spacing: 1px;
+                border-radius: 1%;
+                transition: all 0.2s;
+                &:hover{
+                    background-color: rgba(255,255,255,0.5);
+                }
+            }
+        }
+    }
+    #family-member{
+        display: grid;
+        justify-content: center;
+        widows: 100vw;
+        .family-content{
+            .family{
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr 1fr;
+                grid-template-rows: auto;
+                grid-gap: 2rem;
+                margin-top: 2em;
+                .member-details{
+                    img{
+                        width: 90%;
+                        border-radius: 2%;
+                    }
+                    p{
+                        letter-spacing: 1px;
+                        color: $light-red;
+                        &:last-child{
+                            color: $lighter-red;
+                        }
+                    }
+                }
+            }
+            .extended-family{
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                grid-template-rows: auto;
+                grid-gap: 2em;
+                width: 80%;
+                margin: auto;
+                .col-1, .col-2{
+                    .member-details{
+                        p{
+                            letter-spacing: 1px;
+                            color: $light-red;
+                            &:last-child{
+                                color: $lighter-red;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
 @media only screen and (max-width:900px){
     h1{
         font-size: 3.3em;
@@ -136,9 +244,6 @@ h3:after{
         display: flex;
         justify-content: center;
         align-items: center;
-        width: 90%;
-        margin: 0 auto;
-        padding: 1em;
         img{
             width: 100%;
             
