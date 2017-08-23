@@ -18,6 +18,9 @@ body {
   -webkit-font-smoothing: antialiased;
   background-color: antiquewhite; }
 
+a {
+  text-decoration: none; }
+
 h1 {
   font-family: 'Great Vibes', sans-serif;
   font-weight: normal;
@@ -55,8 +58,109 @@ h3:after {
   width: 22%;
   margin: auto; }
 
+#return-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #ffc5c3;
+  background: rgba(255, 197, 195, 0.7);
+  width: 50px;
+  height: 50px;
+  display: block;
+  text-decoration: none;
+  -webkit-border-radius: 35px;
+  -moz-border-radius: 35px;
+  border-radius: 35px;
+  display: none;
+  -webkit-transition: all 0.3s linear;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease; }
+  #return-to-top i {
+    color: #fff;
+    margin: 0;
+    position: relative;
+    left: 16px;
+    top: 13px;
+    font-size: 19px;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease; }
+  #return-to-top:hover {
+    background: rgba(254, 79, 63, 0.9); }
+    #return-to-top:hover i {
+      color: #fff;
+      top: 5px; }
+
 .wrapper {
   width: 100%; }
+  .wrapper header {
+    position: fixed;
+    top: 0;
+    left: 0; }
+    .wrapper header #menu-btn {
+      position: absolute;
+      left: 0;
+      top: 0;
+      background-color: #FF5B55;
+      opacity: 0.8;
+      padding: 1em;
+      transition: all .2s ease-out; }
+      .wrapper header #menu-btn:hover {
+        cursor: pointer; }
+      .wrapper header #menu-btn .bar1, .wrapper header #menu-btn .bar2, .wrapper header #menu-btn .bar3 {
+        width: 35px;
+        height: 5px;
+        background-color: #fefefe;
+        margin: 6px 0;
+        transition: 0.4s; }
+      .wrapper header #menu-btn .change .bar1 {
+        -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+        transform: rotate(-45deg) translate(-9px, 6px); }
+      .wrapper header #menu-btn .change .bar2 {
+        opacity: 0; }
+      .wrapper header #menu-btn .change .bar3 {
+        -webkit-transform: rotate(45deg) translate(-8px, -8px);
+        transform: rotate(45deg) translate(-8px, -8px); }
+    .wrapper header #menu {
+      position: absolute;
+      top: 4.5em;
+      left: 0;
+      background-color: rgba(255, 255, 255, 0.7);
+      border: 1px solid rgba(255, 255, 255, 0.9);
+      width: 15em; }
+      .wrapper header #menu ul {
+        padding: 0;
+        margin: 0;
+        list-style: none;
+        font-weight: 400;
+        line-height: 50px;
+        -webkit-box-shadow: 2px 5px 16px 0px rgba(110, 110, 110, 0.91);
+        -moz-box-shadow: 2px 5px 16px 0px rgba(110, 110, 110, 0.91);
+        box-shadow: 2px 5px 16px 0px rgba(110, 110, 110, 0.91);
+        color: #6e6e6e; }
+        .wrapper header #menu ul li {
+          display: list-item;
+          color: #6e6e6e;
+          text-align: center;
+          border-top: 1px solid #ffc5c3;
+          transition: all .3s ease-out; }
+          .wrapper header #menu ul li:first-child {
+            border-top: transparent; }
+          .wrapper header #menu ul li a {
+            display: block;
+            height: 100%;
+            color: #6e6e6e;
+            text-decoration: none;
+            cursor: pointer;
+            letter-spacing: 2px; }
+            .wrapper header #menu ul li a:hover {
+              text-decoration: none;
+              color: #fefefe;
+              background-color: #6e6e6e; }
   .wrapper #header {
     width: 100%;
     background-image: linear-gradient(rgba(255, 44, 36, 0.8), rgba(255, 44, 36, 0.8)), url(../images/thorn-yang-104864.jpg);
@@ -89,9 +193,10 @@ h3:after {
     width: 100%;
     color: #fefefe;
     background-color: #ff5b55;
-    font-weight: 300;
+    font-weight: normal;
     text-align: center;
-    letter-spacing: 1px; }
+    letter-spacing: 1px;
+    padding: 1% 0; }
 
 @media only screen and (min-width: 901px) {
   .logo {
@@ -117,14 +222,17 @@ h3:after {
   .arrow {
     display: block;
     width: 7%;
-    margin: auto; }
+    margin: auto;
+    position: relative;
+    animation: myfirst 1s ease 0s infinite alternate; }
 
   #invitation {
     height: 100vh; }
     #invitation .invitation-content {
       width: 80%;
       display: block;
-      margin: auto; }
+      margin: auto;
+      font-size: 1.2em; }
 
   #invitation-date {
     height: 100vh;
@@ -144,9 +252,11 @@ h3:after {
         letter-spacing: 1px;
         word-spacing: 1px;
         border-radius: 1%;
+        font-size: 120%;
         transition: all 0.2s; }
         #invitation-date .date-content div:hover {
-          background-color: rgba(255, 255, 255, 0.5); }
+          background-color: rgba(255, 255, 255, 0.5);
+          font-size: 150%; }
 
   #family-member {
     display: grid;
@@ -207,7 +317,9 @@ h3:after {
     width: 30%;
     display: block;
     margin: auto;
-    padding-top: 1em; }
+    padding-top: 2em;
+    position: relative;
+    animation: myfirst 1s ease 0s infinite alternate; }
 
   #invitation-date .date-content div {
     width: 100%;
@@ -220,6 +332,9 @@ h3:after {
     font-weight: 300; }
     #invitation-date .date-content div:last-child {
       margin-bottom: 0; }
+    #invitation-date .date-content div:hover {
+      background-color: rgba(255, 255, 255, 0.5);
+      font-weight: normal; }
 
   #family-member .family-content .family {
     margin-top: 1em; }
@@ -228,20 +343,29 @@ h3:after {
       padding: 1em;
       margin-bottom: 1em; }
       #family-member .family-content .family .member-details img {
-        width: 100%; }
+        width: 15em; }
       #family-member .family-content .family .member-details p {
         font-size: 1.1em;
         letter-spacing: 1px;
-        word-spacing: 1px; }
+        word-spacing: 1px;
+        color: #ff3c35; }
         #family-member .family-content .family .member-details p:last-child {
           font-size: 1em;
-          font-weight: 300; }
+          letter-spacing: 1px;
+          color: #ffc5c3; }
   #family-member .family-content .col-1 .member-details p, #family-member .family-content .col-2 .member-details p {
     font-size: 1.1em;
     letter-spacing: 1px;
-    word-spacing: 1px; }
+    word-spacing: 1px;
+    color: #ff3c35; }
     #family-member .family-content .col-1 .member-details p:last-child, #family-member .family-content .col-2 .member-details p:last-child {
       font-size: 1em;
-      font-weight: 300; } }
+      letter-spacing: 1px;
+      color: #ffc5c3; } }
+@keyframes myfirst {
+  0% {
+    top: 0px; }
+  100% {
+    top: 10px; } }
 
 /*# sourceMappingURL=wd-style.css.map */

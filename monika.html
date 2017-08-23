@@ -10,26 +10,26 @@
     </head>
     <body>
         <div class="wrapper">
-            <a href="javascript:" id="return-to-top" style="display: inline;"><i class="icon-chevron-up"></i></a>
-            <header>
-               <div id="menu-btn">
-                    <div class="bar1"></div>
-                    <div class="bar2"></div>
-                    <div class="bar3"></div>
-                </div>
-                <!--menu-->
-                <nav id="menu">
-                     <ul>
-                        <li class="active"><a href="#header">HOME</a></li>
-                        <li><a href="#invitation">INVITATION CARD</a></li>
-                        <li><a href="#invitation-date">CEREMONY DATES</a></li>
-                        <li><a href="#family-member">MY FAMILY</a></li>
-                    </ul>
-                </nav>
-            </header>
+          <a href="javascript:" id="return-to-top" style="display: inline;"><i class="icon-chevron-up"></i></a>
+           <header>
+              <div id="menu-btn">
+                   <div class="bar1"></div>
+                   <div class="bar2"></div>
+                   <div class="bar3"></div>
+               </div>
+               <!--menu-->
+               <nav id="menu">
+                    <ul>
+                       <li class="active"><a href="#header">HOME</a></li>
+                       <li><a href="#invitation">INVITATION CARD</a></li>
+                       <li><a href="#invitation-date">CEREMONY DATES</a></li>
+                       <li><a href="#family-member">MY FAMILY</a></li>
+                   </ul>
+               </nav>
+           </header>
             <section id="header">
                 <div class="logo" data-anijs="if: scroll, on: window, do: fadeIn animated, before: scrollReveal">
-                    <img src="images/logo.png" alt="Girwar & Monika">
+                    <img src="images/logo-monika.png" alt="Girwar & Monika">
                 </div>
                 <div class="header-content" data-anijs="if: scroll, on: window, do: fadeIn animated, before: scrollReveal">
                     <h3>ARE GETTING MARRIED ON</h3>
@@ -42,10 +42,10 @@
                     <h1>Invitation</h1>
                     <p class="inv-request">Mrs. K.D Chandravanshi & Mr. B.R Chandravanshi solicit your blessings and request the pleasure of your company at the Wedding Ceremony of their youngest son</p>
                     <div class="groom-bride-name" data-anijs="if: scroll, on: window, do: jello animated, before: scrollReveal">
-                        <h2>Girwar</h2>
+                        <h2>Monika</h2>
                         <p>(S/o Mrs. Kumari Devi & Mr. Bhoj Raj Chandravanshi)</p>
                         <p>With</p>
-                        <h2>Monika</h2>
+                        <h2>Girwar</h2>
                         <p>(D/o Mrs. Kumari Devi & Mr. Bhoj Raj Chandravanshi)</p>
                     </div>
                     <div class="inv-full">
@@ -172,14 +172,14 @@
           $("#menu").slideToggle();
         });
         $('a[href^="#"]').on('click', function (e) {
-            e.preventDefault();
+					e.preventDefault();
 
-            var target = this.hash;
-            var $target = $(target);
+					var target = this.hash;
+					var $target = $(target);
 
-            $('html, body').animate({
-                'scrollTop': $target.offset().top
-            }, 1000, 'swing');
-        });
+					$('html, body').animate({
+						'scrollTop': $target.offset().top
+					}, 1000, 'swing');
+				});
     </script>
 </html>
