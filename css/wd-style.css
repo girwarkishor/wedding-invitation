@@ -367,5 +367,15 @@ h3:after {
     top: 0px; }
   100% {
     top: 10px; } }
+@media only screen and (max-width: 900px) and (orientation: landscape) {
+  .wrapper #header {
+    width: 100vw;
+    height: 100%; }
+    .wrapper #header .header-content {
+      width: 70%;
+      display: block;
+      margin: auto; }
+    .wrapper #header .arrow {
+      width: 20%; } }
 
 /*# sourceMappingURL=wd-style.css.map */

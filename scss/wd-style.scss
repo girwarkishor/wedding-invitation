@@ -466,3 +466,20 @@ h3:after{
     0%   {top:0px;}
     100% {top:10px;}
 }
+
+@media only screen and (max-width:900px) and (orientation:landscape) {
+    .wrapper{
+        #header{
+            width: 100vw;
+            height: 100%;
+            .header-content{
+                width: 70%;
+                display: block;
+                margin: auto;
+            }
+            .arrow{
+                width: 20%;
+            }
+        }
+    }
+}

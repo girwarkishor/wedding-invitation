@@ -95,6 +95,9 @@ h3:after {
   width: 70%; }
 
 @media only screen and (max-width: 900px) {
+  .wd-container {
+    height: auto; }
+
   h3 {
     font-size: 0.9em; }
 
@@ -127,6 +130,24 @@ h3:after {
       font-size: 0.9em; }
       .wd-links .btn span {
         font-size: 0.6rem; } }
+@media only screen and (max-width: 900px) and (orientation: landscape) {
+  .wd-timer {
+    margin-top: 2rem;
+    color: #fefefe; }
+    .wd-timer #days, .wd-timer #hours, .wd-timer #minutes, .wd-timer #seconds {
+      display: inline-block;
+      width: 6em;
+      padding: 1em;
+      font-size: 1em; }
+    .wd-timer .seperator {
+      font-family: 'Great Vibes',sans-serif;
+      font-size: 2em; }
+    .wd-timer .mv-hdn {
+      display: inline-block;
+      visibility: visible; }
+
+  .wd-footer img {
+    width: 40%; } }
 @media only screen and (min-width: 901px) {
   .logo {
     margin-top: 1em; }

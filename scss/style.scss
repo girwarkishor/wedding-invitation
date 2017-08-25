@@ -114,6 +114,9 @@ h3:after {
 }
 
 @media only screen and (max-width: 900px){
+    .wd-container{
+        height: auto;
+    }
     h3{
         font-size: 0.9em;
     }
@@ -152,6 +155,32 @@ h3:after {
             font-size: 0.6rem;
             }
         }   
+    }
+}
+
+@media only screen and (max-width: 900px) and (orientation:landscape){
+    .wd-timer{
+        margin-top: 2rem;
+        color: $white;
+        #days,#hours, #minutes, #seconds{
+            display: inline-block;
+            width: 6em;
+            padding: 1em;
+            font-size: 1em;
+        }
+        .seperator{
+            font-family: 'Great Vibes',sans-serif;
+            font-size: 2em;
+        }
+        .mv-hdn{
+            display: inline-block;
+            visibility: visible;
+        }
+    }
+    .wd-footer{
+        img{
+            width: 40%;
+        }
     }
 }
 
